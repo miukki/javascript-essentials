@@ -8,6 +8,9 @@ function printNumbersTimeout20_100(i) {
     i++;
     if (i <= 20) printNumbersTimeout20_100(i);
   }, 100);
+  //setTimeout delay is not a guaranteed thing, but rather a minimum thing. 
+  //The 100 ms means a minimum delay of 500 ms
+
 }
 
 printNumbersTimeout20_100(0)
