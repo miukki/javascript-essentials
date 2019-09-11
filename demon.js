@@ -28,3 +28,18 @@ async function demon(n, isNoError=true) {
 //Async return promise
 demon(5)
 
+
+//final sample from class
+// async demon(n, isNoError = true) {
+//   while (isNoError) {
+//     console.log(`Start proccess`);
+//     try {
+//       const result = await this.bodyAsyncForDemon();
+//       this.logger.info(`Success, next recalculation in ${n} mills`, { result: JSON.stringify(result) });
+//       await this.delay(n);
+//     } catch (error) {
+//       isNoError = false;
+//       this.logger.error(`error`, { error });
+//     }
+//   }
+// }
