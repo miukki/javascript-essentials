@@ -3,7 +3,7 @@ function find(arr, val) {
 	do {
 		pos = Math.floor((start+end)/2);
 		if (pos >=0 && pos < arr.length) {
-			if (val == arr[pos]) return pos;
+			if (val === arr[pos]) return pos;
 			if (val > arr[pos]) start = pos+1;
 			if (val < arr[pos]) end = pos-1;
 		}
